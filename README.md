@@ -1,7 +1,9 @@
 # Convert2PDF
 
 #### 介绍
-使用LibreOffice 将doc转换为pdf  
+使用LibreOffice 转换excel/ppt/word到PDF
+支持xls,xlsx,ppt,pptx,doc,docx
+
 核心为调用soffice,所以需要提前安装此应用[腾讯云镜像](https://mirrors.cloud.tencent.com/libreoffice/libreoffice/stable/24.2.2/win/x86_64/)
 ```
 soffice --invisible --convert-to pdf  "PDF文件所在位置" --outdir  "输出文件夹"
