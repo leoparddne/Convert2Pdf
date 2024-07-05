@@ -8,12 +8,12 @@ namespace FileConverterTest
         [TestMethod]
         public void TestMethod1()
         {
-            WordHelper wordHelper = new WordHelper();
+            ConverterHelper convertHelper = new ConverterHelper();
 
             string sofficePath = @"D:\Program Files\LibreOffice\program\soffice.exe";
-            wordHelper.Init(sofficePath);
+            convertHelper.Init(sofficePath);
 
-            var result = wordHelper.ConverterToPDF(@"C:\Users\ivesBao\Desktop\test.docx", @"C:\Users\ivesBao\Desktop\testpdf");
+            var result = convertHelper.ConverterToPDF(@"C:\Users\ivesBao\Desktop\test.docx", @"C:\Users\ivesBao\Desktop\testpdf");
             Console.WriteLine(result);
         }
     }

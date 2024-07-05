@@ -1,4 +1,4 @@
-# Word2PDF
+# Convert2PDF
 
 #### 介绍
 使用LibreOffice 将doc转换位pdf  
@@ -10,13 +10,13 @@ soffice --invisible --convert-to pdf  "PDF文件所在位置" --outdir  "输出�
 
 #### 示例
 ```
-WordHelper wordHelper = new WordHelper();
+    ConverterHelper convertHelper = new ConverterHelper();
 
-string sofficePath = @"D:\Program Files\LibreOffice\program\soffice.exe";
-wordHelper.Init(sofficePath);
+    string sofficePath = @"D:\Program Files\LibreOffice\program\soffice.exe";
+    convertHelper.Init(sofficePath);
 
-var result = wordHelper.ConverterToPDF(@"C:\Users\ivesBao\Desktop\test.docx", @"C:\Users\ivesBao\Desktop\testpdf");
-Console.WriteLine(result);
+    var result = convertHelper.ConverterToPDF(@"C:\Users\ivesBao\Desktop\test.docx", @"C:\Users\ivesBao\Desktop\testpdf");
+    Console.WriteLine(result);
 ```
 
 #### 参与贡献

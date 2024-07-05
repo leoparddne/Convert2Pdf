@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace FileConverter
 {
-    public class WordHelper : IPDFConverter
+    public class ConverterHelper : IPDFConverter
     {
         /// <summary>
         /// 可执行程序路径
