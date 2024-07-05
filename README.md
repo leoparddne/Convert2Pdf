@@ -4,7 +4,9 @@
 使用LibreOffice 转换excel/ppt/word到PDF
 支持xls,xlsx,ppt,pptx,doc,docx
 
-核心为调用soffice,所以需要提前安装此应用[腾讯云镜像](https://mirrors.cloud.tencent.com/libreoffice/libreoffice/stable/24.2.2/win/x86_64/)
+核心为调用soffice,所以需要提前安装libreoffice  
+下文提到的soffice即libreoffice的可执行程序，可以在安装目录获取(不同版本可能文件名不同,使用主程序即可)
+
 ```
 soffice --invisible --convert-to pdf  "PDF文件所在位置" --outdir  "输出文件夹"
 ```
